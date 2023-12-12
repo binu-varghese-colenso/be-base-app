@@ -19,8 +19,8 @@ WORKDIR /usr/src/app
 
 # Copy built assets from the builder stage
 COPY --from=builder /usr/src/app/build ./build
+COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY package*.json ./
-
 
 # Your application's default port
 EXPOSE 8080

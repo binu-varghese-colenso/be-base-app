@@ -10,7 +10,7 @@
     "dev": "ts-node index.ts",
     "lint": "eslint . --ext .js,.ts --max-warnings 0",
     "test": "jest --testEnvironment=node --runInBand",
-    "prepare": "husky install"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky install; fi"
   },
   "dependencies": {
     "@fastify/cookie": "^9.1.0",
