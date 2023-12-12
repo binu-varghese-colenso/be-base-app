@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rm -rf build",
     "build": "tsc",
-    "postbuild": "cp -R ormconfig.js package.json package-lock.json ./build",
+    "postbuild": "cp -R package.json package-lock.json ./build",
     "start": "node build/index.js",
     "dev": "ts-node index.ts",
     "lint": "eslint . --ext .js,.ts --max-warnings 0",
