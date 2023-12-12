@@ -110,10 +110,34 @@ npm run dev
 
 ### Authentication Routes
 
-- **/api/auth/signup**: Endpoint for user registration.
-- **/api/auth/signin**: Endpoint for user authentication. Returns a JWT upon successful authentication.
+- **/api/signup**: Endpoint for user registration.
+- **/api/signin**: Endpoint for user authentication. Returns a JWT upon successful authentication.
 
-## Security
 
-This application uses JWT (JSON Web Tokens) for securing sensitive endpoints. Ensure that your JWT secret key is kept private and secure.
+## Running in a Local Docker Container
+
+To run the application in a Docker container locally, follow these steps:
+
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t your-app-name .
+   ```
+   Replace `your-app-name` with a name for your Docker image.
+
+2. **Run the Docker Container**:
+   ```bash
+   docker run -p 8080:8080 your-app-name
+   ```
+   This command runs the container and maps port `8080` of the container to port `8080` on your host machine.
+
+Your application should now be accessible at `http://localhost:8080`.
+
+
+Here's the updated section for your `README.md` file to include information about the Postman collection:
+
+---
+
+## Postman Collection for Testing
+
+For convenient testing of the API endpoints, a Postman collection is provided in the `postman` folder of this project. You can import this collection into Postman to test and interact with the application's API endpoints.
 

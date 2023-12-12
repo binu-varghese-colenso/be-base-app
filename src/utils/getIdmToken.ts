@@ -24,7 +24,7 @@ async function getIdmToken(clientId?: string, clientSecret?: string): Promise<To
     return response.data;
   } catch (error) {
     console.error('Error obtaining IDM token:', error);
-    throw error; // Or handle error as per your application logic
+    throw error;
   }
 }
 
