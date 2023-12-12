@@ -130,7 +130,7 @@ To run the application in a Docker container locally, follow these steps:
    ```
    This command runs the container and maps port `8080` of the container to port `8080` on your host machine.
 
-Your application should now be accessible at `http://localhost:8080`.
+Application should now be accessible at `http://localhost:8080`.
 
 
 ## Postman Collection for Testing
