@@ -63,11 +63,11 @@ This structure provides a comprehensive overview of the key components of your p
 
 1. Clone the repository:
    ```bash
-   git clone https://your-repository-url
+   git clone hhttps://github.com/binu-varghese-colenso/test-be-app.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-project-directory
+   cd test-be-app
    ```
 3. Install dependencies:
    ```bash
