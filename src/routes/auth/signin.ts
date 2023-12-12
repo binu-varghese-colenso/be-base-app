@@ -7,7 +7,7 @@ const FORGEROCK_LOGIN_ENDPOINT =
   'https://ciam-sb.mars.com/auth/json/realms/root/realms/Petcare/authenticate?authIndexType=service&authIndexValue=PetcareAuth';
 
 interface SigninRequestBody {
-  userName: string;
+  email: string;
   password: string;
 }
 
@@ -24,7 +24,7 @@ export default async function signinRoute(
           {},
           {
             headers: {
-              'x-openam-username': userData.userName,
+              'x-openam-username': userData.email,
               'x-openam-password': userData.password,
               'Accept-API-Version': 'resource=2.0, protocol=1.0',
               // Include the 'Cookie' header if necessary
