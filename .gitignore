@@ -1,0 +1,7 @@
+node_modules
+
+.settings/
+.vscode/
+
+# dotenv environment variables file
+.env
