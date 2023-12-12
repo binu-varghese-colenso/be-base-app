@@ -133,10 +133,6 @@ To run the application in a Docker container locally, follow these steps:
 Your application should now be accessible at `http://localhost:8080`.
 
 
-Here's the updated section for your `README.md` file to include information about the Postman collection:
-
----
-
 ## Postman Collection for Testing
 
 For convenient testing of the API endpoints, a Postman collection is provided in the `postman` folder of this project. You can import this collection into Postman to test and interact with the application's API endpoints.
