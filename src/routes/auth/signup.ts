@@ -75,7 +75,7 @@ export default async function signupRoute(
         }
 
         // Respond with appropriate message
-        reply.send({ message: 'Signup successful', user: userResponse.data });
+        reply.send({ message: 'Signup successful', user: userResponse });
       } catch (error) {
         reply
           .code(500)
