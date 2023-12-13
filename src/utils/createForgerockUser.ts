@@ -48,7 +48,7 @@ async function createForgerockUser(userData: User, token: string) {
         console.log('Error', error.message);
     }
     console.error('Error creating Forgerock user:', error);
-    throw error; // Or handle error as per your application logic
+    throw error; 
   }
 }
 

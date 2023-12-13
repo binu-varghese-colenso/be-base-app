@@ -9,8 +9,8 @@ interface TokenResponse {
   // Include other fields from the response as needed
 }
 
-const CLIENT_ID = process.env.FORGEROCK_CLIENT_ID || "idm-provisioning"
-const CLIENT_SECRET = process.env.FORGEROCK_CLIENT_SECRET || "openidm"
+const CLIENT_ID = process.env.IDM_FORGEROCK_CLIENT_ID || "idm-provisioning"
+const CLIENT_SECRET = process.env.IDM_FORGEROCK_CLIENT_SECRET || "openidm"
 
 async function getIdmToken(clientId?: string, clientSecret?: string): Promise<TokenResponse> {
   try {
