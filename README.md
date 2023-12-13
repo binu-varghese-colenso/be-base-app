@@ -68,10 +68,17 @@ project-root/
 Create a `.env` file in the root of project and specify the following variables:
 
 ```env
-JWT_SECRET=jwt_secret
+JWT_SECRET=
+BRAND_ASSOCIATION=
+ACCOUNT_ID=
+FORGEROCK_USER_ENDPOINT=
+FORGEROCK_TOKENINFO_ENDPOINT=
+PEDIGREE_FORGEROCK_CLIENT_ID=
+PEDIGREE_FORGEROCK_CLIENT_SECRET=
+IDM_FORGEROCK_CLIENT_ID=
+IDM_FORGEROCK_CLIENT_SECRET=
+FORGEROCK_VALIDATION_ENDPOINT=
 ```
-
-Replace `jwt_secret` with a secure key for JWT.
 
 ### Running the Application
 
