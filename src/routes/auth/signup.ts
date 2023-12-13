@@ -10,6 +10,7 @@ interface SignupRequestBody {
   sn: string;
   mail: string;
   password: string
+  marketing: boolean
 }
 
 /*
@@ -45,10 +46,10 @@ export default async function signupRoute(
             givenName: userData.givenName,
             sn: userData.sn,
             mail: userData.mail,
-            brandAssociation: 'PedigreeGoodpoints',
-            accountId: "123456b7",
-            "preferences/marketing": false,
-            "preferences/updates": false,
+            brandAssociation: process.env.BRAND_ASSOCIATION || 'PedigreeGoodpoints',
+            accountId: process.env.ACCOUNT_ID || "123456b7",
+            "preferences/marketing": !!userData.marketing,
+            "preferences/updates": !!userData.marketing,
           },
           token,
         );
