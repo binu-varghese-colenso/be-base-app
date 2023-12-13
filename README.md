@@ -8,12 +8,6 @@ This Fastify project is designed to provide a robust and scalable backend, featu
 - **Snip Integration**: Proxy routes for Snip third-party service calls.
 - **Custom Authentication Routes**: Sign-up and sign-in functionality, leveraging JWT for secure token management.
 
-## Getting Started
-
-Certainly! Below is an example of how you can document the folder structure of your Fastify project in the `README.md`. This will give users and contributors a clear overview of how the project is organized.
-
----
-
 
 ## Folder Structure
 
@@ -49,11 +43,6 @@ project-root/
 ```
 
 
-
----
-
-This structure provides a comprehensive overview of the key components of your project. Feel free to adjust the folder structure documentation based on the actual contents of your project. It's a good practice to keep this section updated as your project evolves.
-
 ### Prerequisites
 
 - Node.js (version 12 or later)
@@ -76,13 +65,13 @@ This structure provides a comprehensive overview of the key components of your p
 
 ### Environment Setup
 
-Create a `.env` file in the root of your project and specify the following variables:
+Create a `.env` file in the root of project and specify the following variables:
 
 ```env
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=jwt_secret
 ```
 
-Replace `your_jwt_secret` with a secure key for JWT.
+Replace `jwt_secret` with a secure key for JWT.
 
 ### Running the Application
 
@@ -120,15 +109,15 @@ To run the application in a Docker container locally, follow these steps:
 
 1. **Build the Docker Image**:
    ```bash
-   docker build -t your-app-name .
+   docker build -t app-name .
    ```
-   Replace `your-app-name` with a name for your Docker image.
+   Replace `app-name` with a name for  Docker image.
 
 2. **Run the Docker Container**:
    ```bash
-   docker run -p 8080:8080 your-app-name
+   docker run -p 8080:8080 app-name
    ```
-   This command runs the container and maps port `8080` of the container to port `8080` on your host machine.
+   This command runs the container and maps port `8080` of the container to port `8080` on  host machine.
 
 Application should now be accessible at `http://localhost:8080`.
 
